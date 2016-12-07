@@ -50,7 +50,7 @@ class datadog_agent::redhat(
 
     yumrepo {'datadog':
       enabled  => 1,
-      gpgcheck => 1,
+      gpgcheck => 0,
       gpgkey   => $gpgkey,
       descr    => 'Datadog, Inc.',
       baseurl  => $baseurl,
